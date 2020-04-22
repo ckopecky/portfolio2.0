@@ -8,7 +8,6 @@ const HeroStyle = styled.div`
 	display: flex;
 	
 	.hero-caption-box {
-		width: 40%;
 		height: 300px;
 		background: ${props => {
 			return props.theme.surface;
@@ -20,8 +19,8 @@ const HeroStyle = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		h1, h2, h3, h4 {
-			text-transform: capitalize;
+		h1, h4 {
+			padding: 30px 100px;
 		}
 
 	}

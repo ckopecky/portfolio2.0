@@ -5,12 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 const NavbarStyles = styled.div`
-
     .navbar {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 2.5rem;
+        justify-content: space-around;
         position: absolute;
         z-index: 1;
         width: 100%;
@@ -28,12 +26,13 @@ const NavbarStyles = styled.div`
     }
 
     .navbar--logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         font-family: 'Homemade Apple', cursive;
         width: 30%;
-        padding: 0px 10px;
-        align-self: center;
-        height: 2rem;
-        margin-right: 0.5rem;
+        height: 3rem;
+        padding: 20px;
         animation: rotate 0.7s ease-in-out 0.5s;
     }
     .navbar--link {
@@ -49,7 +48,8 @@ const NavbarStyles = styled.div`
             font-family: 'Roboto', sans-serif;
             background: ${props => props.theme.buttonbg};
             color: ${props => props.theme.buttoncolor};
-            margin: 0px;
+            margin: 0px 20px;
+    
         }
         @keyframes moveDown {
             from {
