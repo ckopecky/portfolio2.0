@@ -120,7 +120,6 @@ export const Projects = () => {
 														}
 													/>
 													<span>
-														{' '}
 														Deployed Project
 													</span>
 												</a>
