@@ -32,7 +32,9 @@ export const HeroStyles = styled.div`
 			width: 50%;
 			justify-content: center;
 			padding: 20px;
-			button {
+			a button {
+				width: 100px;
+				text-align: center;
 				margin: 0px 20px;
 			}
 		}
@@ -41,6 +43,7 @@ export const HeroStyles = styled.div`
 			display: flex;
 			width: 50%;
 			justify-content: space-around;
+			font-size: 2.0rem;
 		}
 	}
 	color: ${(props) => {

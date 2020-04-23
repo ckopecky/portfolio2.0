@@ -17,13 +17,13 @@ export const Hero = ({stickyRef}) => {
 				<hr width="500" />
 				<h4>Full-Stack Web Developer</h4>
 				<div className="button-container">
-					<button>Projects</button>
+					<a href="#portfolio"><button>Portfolio</button></a>
 					<button>Contact Me</button>
 				</div>
 				<div className="social-media">
-					<a href={githubUrl}><FontAwesomeIcon icon={faGithub} /></a>
-					<a href={linkedInUrl}><FontAwesomeIcon icon={faLinkedin} /></a>
-					<a href={twitterUrl}><FontAwesomeIcon icon={faTwitter} /></a>
+					<a href={githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+					<a href={linkedInUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+					<a href={twitterUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
 				</div>
 			</div>
 		</HeroStyles>

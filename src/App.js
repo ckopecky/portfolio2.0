@@ -3,7 +3,7 @@ import { Hero } from './components/Hero/Hero';
 import { ThemeContext } from './context/ThemeContext';
 import Navbar from './components/Navbar/Navbar';
 import { AppContext } from './context/AppContext';
-import Projects from './components/Grid/Projects';
+import Projects from './components/Projects/Projects';
 import { GlobalStyle, OverlayStyle } from './context/GlobalStyle';
 
 const App = () => {
