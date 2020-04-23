@@ -73,6 +73,7 @@ export const Projects = () => {
 								<StyledDiv
 									key={index}
 									project={project}
+									theme={theme}
 									className={`item${index + 1}`}>
 									<div className='show'>
 										<div className='description'>
@@ -94,6 +95,7 @@ export const Projects = () => {
 						} else {
 							return (
 								<StyledDiv
+									theme={theme}
 									key={index}
 									project={project}
 									className={`item${index + 1}`}>

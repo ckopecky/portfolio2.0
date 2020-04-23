@@ -12,7 +12,8 @@ export const StyledDiv = styled.div`
 
     .show {
         display: none !important;
-        background: rgba(255,255,255, .8);
+        background: ${props => props.theme.oppositeTheme === "dark" ? 'rgba(255,255,255, .8)' : 'rgba(0, 0, 0, .8)'
+        };
         height: 100%;
         width: 100%; 
         /* width and height is for background color */
