@@ -18,7 +18,7 @@ export const Hero = ({stickyRef}) => {
 				<h4>Full-Stack Web Developer</h4>
 				<div className="button-container">
 					<a href="#portfolio"><button>Portfolio</button></a>
-					<button>Contact Me</button>
+					<a href="#contact"><button>Contact Me</button></a>
 				</div>
 				<div className="social-media">
 					<a href={githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>

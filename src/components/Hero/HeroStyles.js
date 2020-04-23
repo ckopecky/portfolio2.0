@@ -33,7 +33,7 @@ export const HeroStyles = styled.div`
 			justify-content: center;
 			padding: 20px;
 			a button {
-				width: 100px;
+				width: 200px;
 				text-align: center;
 				margin: 0px 20px;
 			}

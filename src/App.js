@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import { AppContext } from './context/AppContext';
 import Projects from './components/Projects/Projects';
 import { GlobalStyle, OverlayStyle } from './context/GlobalStyle';
+import { Contact } from './components/Contact/Contact';
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -18,6 +19,7 @@ const App = () => {
         <Navbar sticky={isSticky}/>
         <Hero stickyRef={stickyRef}/>
         <Projects />
+        <Contact />
       </OverlayStyle>
     </React.Fragment>
   );

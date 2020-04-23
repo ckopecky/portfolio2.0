@@ -1,63 +1,60 @@
-import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import React, { useContext } from 'react';
+import { ContactStyles } from './ContactStyles';
 import 'dotenv/config';
+import { ThemeContext } from '../../context/ThemeContext';
 
 
-class Contact extends React.Component {
+export const Contact = (props) => {
+    const { theme } = useContext(ThemeContext);
+    return (
+        <ContactStyles theme={theme}>
+            <form
+                className='contact-form'
+                id="contact"
+                action={process.env.REACT_APP_FORMSPREE_URI}
+                method='POST'>
+                <p className='contact-header'>Contact Me!</p>
+                <div className='input-wrapper'>
+                    <div className='contact-form-input'>
+                        <label>Name:</label>
+                        <input
+                            type='text'
+                            name='name'
+                            className='form-blank-name-email'
+                            placeholder='Joe Sample'
+                            required
+                        />
+                    </div>
+                    <div className='contact-form-input'>
+                        <label for='email'>Email:</label>
+                        <input
+                            type='email'
+                            name='_replyto'
+                            className='form-blank-name-email'
+                            placeholder='joe@sample.com'
+                            required
+                        />
+                    </div>
 
+                    <div className='contact-form-input'>
+                        <label for='message'>Message:</label>
+                        <textarea
+                            type='textarea'
+                            name='message'
+                            className='message'
+                            required
+                            placeholder='Hi, Christina!'
+                        />
+                    </div>
 
-	render() {
-		return (
-			<div className='main-content contact-wrapper'>
-				<Form
-					className='contact-form'
-					action={process.env.REACT_APP_FORMSPREE_URI}
-					method='POST'>
-					<p className='contact-header'>Contact Me!</p>
-					<div className='input-wrapper'>
-						<FormGroup className='contact-form-input'>
-							<Label>Name:</Label>
-							<Input
-								type='text'
-								name='name'
-								className='form-blank-name-email'
-								placeholder='Joe Sample'
-								required
-							/>
-						</FormGroup>
-						<FormGroup className='contact-form-input'>
-							<Label for='email'>Email:</Label>
-							<Input
-								type='email'
-								name='_replyto'
-								className='form-blank-name-email'
-								placeholder='joe@sample.com'
-								required
-							/>
-						</FormGroup>
-
-						<FormGroup className='contact-form-input'>
-							<Label for='message'>Message:</Label>
-							<Input
-								type='textarea'
-								name='message'
-								className='message'
-								required
-								placeholder='Hi, Christina!'
-							/>
-						</FormGroup>
-
-						<Button
-							className='submit-button'
-							type='submit'
-							value='Send Message'>
-							Submit
-						</Button>
-					</div>
-				</Form>
-			</div>
-		);
-	}
+                    <button
+                        className='submit-button'
+                        type='submit'
+                        value='Send Message'>
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </ContactStyles>
+    );
 }
-
-export default Contact;
