@@ -10,17 +10,20 @@ import { AppContextProvider } from './context/AppContext';
 
 //my components
 import App from './App';
+import ScrollToTop from './ScrollToTop';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Router>
-    <ThemeContextProvider>
-      <AppContextProvider>
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>
-      </AppContextProvider>
-    </ThemeContextProvider>
+    <ScrollToTop>
+      <ThemeContextProvider>
+        <AppContextProvider>
+          <React.StrictMode>
+              <App />
+          </React.StrictMode>
+        </AppContextProvider>
+      </ThemeContextProvider>
+      </ScrollToTop>
   </Router>,
   document.getElementById('root')
 );

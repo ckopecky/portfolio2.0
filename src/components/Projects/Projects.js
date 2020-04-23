@@ -81,7 +81,7 @@ export const Projects = () => {
 										</div>
 										<div className='links'>
 											<div>
-												<a href={project.github}>
+												<a href={project.github} target="_blank" rel="noopener noreferrer">
 													<FontAwesomeIcon
 														icon={faGithub}
 													/>
@@ -105,7 +105,7 @@ export const Projects = () => {
 										</div>
 										<div className='links'>
 											<div>
-												<a href={project.github}>
+												<a href={project.github} target="_blank" rel="noopener noreferrer">
 													<FontAwesomeIcon
 														icon={faGithub}
 													/>
@@ -113,7 +113,7 @@ export const Projects = () => {
 												</a>
 											</div>
 											<div>
-												<a href={project.deploy}>
+												<a href={project.deploy} target="_blank" rel="noopener noreferrer">
 													<FontAwesomeIcon
 														icon={
 															faExternalLinkSquareAlt
