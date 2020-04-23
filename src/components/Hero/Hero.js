@@ -1,9 +1,15 @@
+//installed packages
 import React, { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import { HeroStyles } from './HeroStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+//my context
+import { ThemeContext } from '../../context/ThemeContext';
+//my styled-components
+import { HeroStyles } from './HeroStyles';
+//my resources
 import { twitterUrl, githubUrl, linkedInUrl } from '../../services/resourceURLS';
+
 
 
 export const Hero = ({stickyRef}) => {

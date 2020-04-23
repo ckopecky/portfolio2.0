@@ -1,13 +1,16 @@
+//installed packages
 import "dotenv/config";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { ThemeContextProvider } from './context/ThemeContext';
-import { AppContextProvider } from './context/AppContext';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+//my contexts
+import { ThemeContextProvider } from './context/ThemeContext';
+import { AppContextProvider } from './context/AppContext';
 
+//my components
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Router>

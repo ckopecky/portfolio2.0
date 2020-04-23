@@ -1,5 +1,20 @@
+//installed packages
 import 'dotenv/config';
 import React, { useEffect, useState, useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
+
+//my context
+import { ThemeContext } from '../../context/ThemeContext';
+
+//my styled-components
+import { FilterNav } from './FilterNav';
+import { ProjectsStyles } from './ProjectsStyles';
+import { StyledDiv } from './StyledDiv';
+import { StyledNav } from './StyledNav';
+
+//my resources
 import {
 	CineView,
 	GoogleClone,
@@ -8,16 +23,10 @@ import {
 	LambdaNotes,
 	SortingHat,
 } from '../../services/projectInfo';
-import { ThemeContext } from '../../context/ThemeContext';
-import { ProjectsStyles } from './ProjectsStyles';
-import { StyledDiv } from './StyledDiv';
-import { StyledNav } from './StyledNav';
-import { FilterNav } from './FilterNav';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 
-const Projects = () => {
+
+
+export const Projects = () => {
 	const { theme } = useContext(ThemeContext);
 	const [projects, setProjects] = useState([]);
 	useEffect(() => {
@@ -59,7 +68,6 @@ const Projects = () => {
 				</StyledNav>
 				<div className='flex-container'>
 					{projects.map((project, index) => {
-						console.log(project.techStack.match(new RegExp('python', 'i')));
 						if (project.techStack.match(new RegExp('python', 'i')) !== null) {
 							return (
 								<StyledDiv
@@ -84,7 +92,6 @@ const Projects = () => {
 								</StyledDiv>
 							);
 						} else {
-							console.log('hit')
 							return (
 								<StyledDiv
 									key={index}
@@ -129,4 +136,3 @@ const Projects = () => {
 	);
 };
 
-export default Projects;

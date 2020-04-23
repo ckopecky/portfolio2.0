@@ -1,11 +1,21 @@
+//installed packages
 import React, { useContext } from 'react';
-import { Hero } from './components/Hero/Hero';
-import { ThemeContext } from './context/ThemeContext';
-import Navbar from './components/Navbar/Navbar';
+import { Route, Switch } from 'react-router-dom';
+
+//my context
 import { AppContext } from './context/AppContext';
-import Projects from './components/Projects/Projects';
-import { GlobalStyle, OverlayStyle } from './context/GlobalStyle';
+import { ThemeContext } from './context/ThemeContext';
+
+//my components
 import { Contact } from './components/Contact/Contact';
+import { FourOhFour } from './components/FourOhFour/FourOhFour';
+import { Hero } from './components/Hero/Hero';
+import { Navbar } from './components/Navbar/Navbar';
+import { Projects } from './components/Projects/Projects';
+
+//my styled components
+import { GlobalStyle, OverlayStyle } from './context/GlobalStyle';
+
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,9 +27,17 @@ const App = () => {
       <OverlayStyle theme={theme}>
         <GlobalStyle theme={theme}/>
         <Navbar sticky={isSticky}/>
-        <Hero stickyRef={stickyRef}/>
-        <Projects />
-        <Contact />
+        <Switch>
+          <Route exact path="/">
+            <Hero stickyRef={stickyRef}/>
+            <Projects />
+            <Contact />
+          </Route>
+          <Route>
+            <FourOhFour stickyRef={stickyRef}/>
+          </Route>
+        </Switch>
+        
       </OverlayStyle>
     </React.Fragment>
   );

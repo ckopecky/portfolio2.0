@@ -1,5 +1,7 @@
-import { CineViewImages, SortingHatImages, GoogleCloneImages, InstaCloneImages, BreakoutImages, LambdaNotesImages }from './imageImports';
 import 'dotenv/config';
+//static database -- no need for backend if the data is not changing
+
+import { CineViewImages, SortingHatImages, GoogleCloneImages, InstaCloneImages, BreakoutImages, LambdaNotesImages }from './imageImports';
 
 export const CineView = {
     name: "CineView",

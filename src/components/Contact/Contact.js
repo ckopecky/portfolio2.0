@@ -1,7 +1,10 @@
-import React, { useContext } from 'react';
-import { ContactStyles } from './ContactStyles';
+//installed packages
 import 'dotenv/config';
+import React, { useContext } from 'react';
+//my context
 import { ThemeContext } from '../../context/ThemeContext';
+//my styled component
+import { ContactStyles } from './ContactStyles';
 
 
 export const Contact = (props) => {
