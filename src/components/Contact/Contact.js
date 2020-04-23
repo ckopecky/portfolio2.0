@@ -16,7 +16,7 @@ export const Contact = (props) => {
                 <p className='contact-header'>Contact Me!</p>
                 <div className='input-wrapper'>
                     <div className='contact-form-input'>
-                        <label>Name:</label>
+                        <label htmlFor="name">Name:</label>
                         <input
                             type='text'
                             name='name'
@@ -26,7 +26,7 @@ export const Contact = (props) => {
                         />
                     </div>
                     <div className='contact-form-input'>
-                        <label for='email'>Email:</label>
+                        <label htmlFor='email'>Email:</label>
                         <input
                             type='email'
                             name='_replyto'
@@ -37,7 +37,7 @@ export const Contact = (props) => {
                     </div>
 
                     <div className='contact-form-input'>
-                        <label for='message'>Message:</label>
+                        <label htmlFor='message'>Message:</label>
                         <textarea
                             type='textarea'
                             name='message'
