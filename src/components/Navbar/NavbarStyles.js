@@ -6,7 +6,7 @@ export const NavbarStyles = styled.div`
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    z-index: 1;
+    background: ${props => props.theme.surface};
     width: 100%;
 }
 
@@ -29,7 +29,7 @@ export const NavbarStyles = styled.div`
     width: 30%;
     height: 3rem;
     padding: 20px;
-    animation: rotate 0.7s ease-in-out 0.5s;
+    /* animation: rotate 0.7s ease-in-out 0.5s; */
 }
 .navbar--link {
     width: 100%;
