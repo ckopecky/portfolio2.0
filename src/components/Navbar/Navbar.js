@@ -23,7 +23,9 @@ export const Navbar = ({sticky}) => {
                 {sticky ? 
                     <a className="navbar--logo" href="/">
                         Christina Kopecky
-                    </a> : null}                   
+                    </a> : <a className="navbar--logo" href="/">
+                        Christina Kopecky
+                    </a>}                   
                     <div className="navbar--link">
                         <a className="navbar--link-item" href="#contact">Contact Me</a>
                         <a className="navbar--link-item" href="#portfolio">Portfolio</a>
