@@ -8,7 +8,7 @@ export const HeroStyles = styled.div`
 
 	.hero-caption-box {
 		width: 50%;
-		height: 300px;
+		height: 500px;
 		background: ${(props) => {
 			return props.theme.surface;
 		}};
