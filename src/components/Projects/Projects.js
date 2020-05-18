@@ -23,8 +23,7 @@ import {
 	LambdaNotes,
 	SortingHat,
 } from '../../services/projectInfo';
-
-
+import Dropdown from './Dropdown';
 
 export const Projects = () => {
 	const { theme } = useContext(ThemeContext);
@@ -42,6 +41,7 @@ export const Projects = () => {
 	}, []);
 
 	const handleClick = (e) => {
+		console.log(e, 'event');
 		const copy = [
 			CineView,
 			GoogleClone,
@@ -64,11 +64,21 @@ export const Projects = () => {
 		<React.Fragment>
 			<ProjectsStyles theme={theme}>
 				<StyledNav id='portfolio' theme={theme}>
-					<FilterNav handleClick={handleClick} />
+					<span id="projects">
+							Projects
+					</span>
+					<>
+						<span>Filter:</span>
+						<Dropdown handleClick={handleClick} />
+					</>
 				</StyledNav>
 				<div className='flex-container'>
 					{projects.map((project, index) => {
-						if (project.techStack.match(new RegExp('python', 'i')) !== null) {
+						if (
+							project.techStack.match(
+								new RegExp('python', 'i')
+							) !== null
+						) {
 							return (
 								<StyledDiv
 									key={index}
@@ -81,7 +91,10 @@ export const Projects = () => {
 										</div>
 										<div className='links'>
 											<div>
-												<a href={project.github} target="_blank" rel="noopener noreferrer">
+												<a
+													href={project.github}
+													target='_blank'
+													rel='noopener noreferrer'>
 													<FontAwesomeIcon
 														icon={faGithub}
 													/>
@@ -105,7 +118,10 @@ export const Projects = () => {
 										</div>
 										<div className='links'>
 											<div>
-												<a href={project.github} target="_blank" rel="noopener noreferrer">
+												<a
+													href={project.github}
+													target='_blank'
+													rel='noopener noreferrer'>
 													<FontAwesomeIcon
 														icon={faGithub}
 													/>
@@ -113,7 +129,10 @@ export const Projects = () => {
 												</a>
 											</div>
 											<div>
-												<a href={project.deploy} target="_blank" rel="noopener noreferrer">
+												<a
+													href={project.deploy}
+													target='_blank'
+													rel='noopener noreferrer'>
 													<FontAwesomeIcon
 														icon={
 															faExternalLinkSquareAlt
@@ -124,7 +143,6 @@ export const Projects = () => {
 													</span>
 												</a>
 											</div>
-				
 										</div>
 									</div>
 								</StyledDiv>
@@ -136,4 +154,3 @@ export const Projects = () => {
 		</React.Fragment>
 	);
 };
-
