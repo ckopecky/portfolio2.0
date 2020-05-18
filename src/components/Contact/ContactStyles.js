@@ -50,6 +50,18 @@ export const ContactStyles = styled.div`
 				display: flex;
 				align-items: center;
 				align-self: center;
+				@media screen and (max-width: 900px){
+					flex-direction: column;
+					width: 90%;
+					align-items: center;
+					label {
+						width: 100%;
+						margin: -10px;
+					}
+					input {
+						width: 100%;
+					}
+				}
 			}
 			.submit-button {
 				width:  20%;

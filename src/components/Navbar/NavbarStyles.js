@@ -39,6 +39,7 @@ export const NavbarStyles = styled.div`
     .navbar--link-item {
         margin: 0px 20px;
         font-family: 'Roboto', sans-serif;
+        text-align: center;
     }
     button {
         font-family: 'Roboto', sans-serif;

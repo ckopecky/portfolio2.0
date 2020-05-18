@@ -8,7 +8,6 @@ export const StyledDiv = styled.div`
 	background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
 
     .show {
         display: none !important;
@@ -43,3 +42,27 @@ export const StyledDiv = styled.div`
     }
     
 `;
+
+export const StyledOption = styled.div`
+        border: 1px solid #000000;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        top: 0;
+        margin: 0;
+        background: #ffe;
+    .list {
+        padding: 10px 20px;
+        margin: 0;
+        border: 1px solid black;
+        left: -1px;
+        width: 50%;
+    }
+    .show {
+        background: #fff;
+        padding: 0;
+        width: 100%;
+    }
+
+`

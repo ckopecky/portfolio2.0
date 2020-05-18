@@ -21,6 +21,10 @@ export const HeroStyles = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		@media screen and (max-width: 900px) {
+			width: 90%;
+			height: 500px;
+		}
 		h1,
 		h2,
 		h3,
@@ -33,9 +37,19 @@ export const HeroStyles = styled.div`
 			justify-content: center;
 			padding: 20px;
 			a button {
-				width: 200px;
+				width: 100%;
 				text-align: center;
-				margin: 0px 20px;
+				margin: 20px;
+				@media screen and (max-width: 900px) {
+					width: 90%;
+					margin: 10px;
+					
+				}
+			}
+			@media screen and (max-width: 900px) {
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
 			}
 		}
 
@@ -50,4 +64,5 @@ export const HeroStyles = styled.div`
 		console.log(props.theme);
 		return props.theme.onSurface;
 	}};
+	
 `;

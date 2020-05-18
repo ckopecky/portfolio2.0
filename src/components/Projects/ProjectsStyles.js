@@ -11,9 +11,11 @@ export const ProjectsStyles = styled.div`
 		flex-wrap: wrap;
 		padding: 20px 30px;
 		background-color: ${(props) => props.theme.background};
-		min-height: 1400px;
-		height: 100%;
 		border-radius: 0px 0px 30px 30px;
+		@media screen and (max-width: 900px){
+			padding: 0;
+			flex-direction: column;
+		}
 	}
 
 	.flex-container > div {
@@ -29,6 +31,11 @@ export const ProjectsStyles = styled.div`
 		margin: 19px;
 		display:flex;
 		justify-content: space-between;
+		@media screen and (max-width: 900px){
+			padding: 0;
+			flex-direction: column;
+			width: 90%;
+		}
 	}
 
 	.item1 {
