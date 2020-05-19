@@ -51,12 +51,14 @@ export const StyledOption = styled.div`
         cursor: pointer;
         top: 0;
         margin: 0;
-        background: #ffe;
+        background: ${props => props.theme.surface};
+        color: ${props => {
+            console.log(props);
+            return props.theme.onSurface;
+        }};
     .list {
         padding: 10px 20px;
         margin: 0;
-        border: 1px solid black;
-        left: -1px;
         width: 50%;
     }
     .show {

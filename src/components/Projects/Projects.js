@@ -67,10 +67,10 @@ export const Projects = () => {
 					<span id="projects">
 							Projects
 					</span>
-					<>
+					{/* <>
 						<span>Filter:</span>
 						<Dropdown handleClick={handleClick} />
-					</>
+					</> */}
 				</StyledNav>
 				<div className='flex-container'>
 					{projects.map((project, index) => {

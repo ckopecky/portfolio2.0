@@ -20,7 +20,7 @@ export const Hero = ({stickyRef}) => {
 				<h1>
 					Christina Kopecky
 				</h1>
-				<hr width="500" />
+				<hr width="50%" />
 				<h4>Full-Stack Web Developer</h4>
 				<div className="button-container">
 					<a href="#portfolio"><button>Portfolio</button></a>
