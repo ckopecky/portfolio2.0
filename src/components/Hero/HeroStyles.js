@@ -36,6 +36,12 @@ export const HeroStyles = styled.div`
 			width: 50%;
 			justify-content: center;
 			padding: 20px;
+			a {
+				margin: 10px;
+				@media screen and (max-width: 900px) {
+					margin: 0px;
+				}
+			}
 			a button {
 				width: 100%;
 				text-align: center;
@@ -64,5 +70,10 @@ export const HeroStyles = styled.div`
 		console.log(props.theme);
 		return props.theme.onSurface;
 	}};
-	
+	.hidden-web {
+		display: none;
+        @media screen and (max-width: 900px) {
+			display: inline-flex;
+    }	
+}
 `;

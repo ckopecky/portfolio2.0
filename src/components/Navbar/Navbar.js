@@ -6,17 +6,18 @@ import { faSun, faMoon, faExternalLinkAlt } from '@fortawesome/free-solid-svg-ic
 //my context
 import { ThemeContext } from '../../context/ThemeContext';
 //my styled-component
-import { NavbarStyles } from './NavbarStyles';
+import { NavbarStyles, ButtonStyle, StyledDiv } from './NavbarStyles';
 //my assets
 import PDFDownload from '../../img/WebsiteAssets/Kopecky_Christina_Resume.pdf';
 
 
 
 
-export const Navbar = ({sticky}) => {
+export const TopNavBar = ({sticky}) => {
     const { theme, toggle } = useContext(ThemeContext);
 
     return (
+      <>
         <NavbarStyles  theme={theme}>
             <nav id="sticky-header" className={sticky ? "navbar navbar-sticky" : "navbar"}>
                 <div className="navbar">
@@ -38,6 +39,13 @@ export const Navbar = ({sticky}) => {
                 </div>
             </nav>
         </NavbarStyles>
+        <StyledDiv theme={theme}>
+          <ButtonStyle onClick={toggle} theme={theme}>
+            <FontAwesomeIcon icon={theme.oppositeTheme === "light" ? faSun : faMoon }/>
+          </ButtonStyle>
+        </StyledDiv>
+        
+      </>
     );
 };
 

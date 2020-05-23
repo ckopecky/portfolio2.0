@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectsStyles = styled.div`
-	width: 80%;
+	width: 90%;
 	margin: 20px auto;
 	#portfolio {
 		padding: 50px;
@@ -41,6 +41,7 @@ export const ProjectsStyles = styled.div`
 	.item1 {
 		/* this is cineview */
 		width: 100%;
+		background-position: center top;
 	}
 	.item2 {
 		/* googleclone */
@@ -56,17 +57,17 @@ export const ProjectsStyles = styled.div`
 	.item4 {
 		/* instaclone */
 		width: 30.25%;
-		background-position: center center;
+		background-position: center top;
 	}
 
 	.item5 {
 		/* breakout */
 		width: 30.25%;
-		background-position: center center;
+		background-position: center;
 	}
 	.item6 {
 		/* harry potter */
 		width: 30.25%;
-		background-position: center center;
+		background-position: center top;
 	}
 `;

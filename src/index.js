@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 //my contexts
 import { ThemeContextProvider } from './context/ThemeContext';
 import { AppContextProvider } from './context/AppContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //my components
 import App from './App';

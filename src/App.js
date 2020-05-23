@@ -10,7 +10,7 @@ import { ThemeContext } from './context/ThemeContext';
 import { Contact } from './components/Contact/Contact';
 import { FourOhFour } from './components/FourOhFour/FourOhFour';
 import { Hero } from './components/Hero/Hero';
-import { Navbar } from './components/Navbar/Navbar';
+import { TopNavBar } from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
 
 //my styled components
@@ -26,7 +26,7 @@ const App = () => {
     <React.Fragment>
       <OverlayStyle theme={theme}>
         <GlobalStyle theme={theme}/>
-        <Navbar sticky={isSticky}/>
+        <TopNavBar sticky={isSticky}/>
         <Switch>
           <Route exact path="/">
             <Hero stickyRef={stickyRef}/>

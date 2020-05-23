@@ -2,6 +2,8 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faSun, faMoon, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+
 
 //my context
 import { ThemeContext } from '../../context/ThemeContext';
@@ -9,13 +11,15 @@ import { ThemeContext } from '../../context/ThemeContext';
 import { HeroStyles } from './HeroStyles';
 //my resources
 import { twitterUrl, githubUrl, linkedInUrl } from '../../services/resourceURLS';
+import PDFDownload from '../../img/WebsiteAssets/Kopecky_Christina_Resume.pdf';
 
 
 
 export const Hero = ({stickyRef}) => {
-	const { theme } = useContext(ThemeContext);
+	const { theme, toggle } = useContext(ThemeContext);
 	return (
 		<HeroStyles ref={stickyRef} theme={theme}>
+			
 			<div className="hero-caption-box" theme={theme}>
 				<h1>
 					Christina Kopecky
@@ -25,6 +29,8 @@ export const Hero = ({stickyRef}) => {
 				<div className="button-container">
 					<a href="#portfolio"><button>Portfolio</button></a>
 					<a href="#contact"><button>Contact Me</button></a>
+	<a href={PDFDownload} className="hidden-web"><button><span>{`Resume  `}   <FontAwesomeIcon icon={faExternalLinkAlt} /></span></button></a>
+
 				</div>
 				<div className="social-media">
 					<a href={githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
