@@ -7,6 +7,7 @@ import { AppContext } from './context/AppContext';
 import { ThemeContext } from './context/ThemeContext';
 
 //my components
+import Blogs from './components/Blogs/Blogs';
 import { Contact } from './components/Contact/Contact';
 import { FourOhFour } from './components/FourOhFour/FourOhFour';
 import { Hero } from './components/Hero/Hero';
@@ -31,6 +32,7 @@ const App = () => {
           <Route exact path="/">
             <Hero stickyRef={stickyRef}/>
             <Projects />
+            <Blogs />
             <Contact />
           </Route>
           <Route>
