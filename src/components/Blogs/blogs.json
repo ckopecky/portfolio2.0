@@ -1,0 +1,324 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "CSS Specificity",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-07",
+            "link": "https://careerkarma.com/blog/css-specificity/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/pankaj-patel-4oAFasAPftg-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "description": "The CSS specificity concept is a little difficult to grasp at first, but this tutorial makes it easier. Learn how to calculate specificity in this article!",
+            "site": "Career Karma"
+        },
+        {
+            "id": 2,
+            "title": "HTML New Line",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-07",
+            "link": "https://careerkarma.com/blog/html-new-line/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/business-computer-contemporary-desk-218863.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description":"Using <br> and <pre> to create new lines"
+        },
+        {
+            "id": 3,
+            "title": "HTML Indent",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-07",
+            "link": "https://careerkarma.com/blog/html-indent/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/03/code-coder-coding-computer-270404.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "Use inline styling to create indentations on the first line of every <p> in HTML. "
+        },
+        {
+            "id": 4,
+            "title": "What are Headers?",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-07",
+            "link": "https://careerkarma.com/blog/html-headers/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/markus-spiske-MI9-PY5cyNs-unsplash.jpg?lossy=1&strip=1&webp=1", 
+            "site":"Career Karma",
+            "description":"Learn what this semantic element is in HTML and how to use it."
+
+        },
+        {
+            "id": 5,
+            "title": "JavaScript Reverse String Code Challenge",
+            "language": "JavaScript",
+            "type": "tutorial",
+            "date": "2020-07-07",
+            "link": "https://careerkarma.com/blog/javascript-reverse-string/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/thisisengineering-raeng-64YrPKiguAE-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site": "Career Karma",
+            "description": "Three different solutions to the JavaScript reverse string code challenge."
+        },
+        {
+            "id": 6,
+            "title": "How to Create and Style Horizontal Lines in HTML",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-03",
+            "link": "https://careerkarma.com/blog/html-horizontal-lines/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/photo-1521114978264-2223e08aa0d2.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description":"Here we'll create horizontal lines to separate sections of our HTML and learn how to style them."
+        },
+        {
+            "id": 7,
+            "title": "Creating Tabs in CSS Without Using JavaScript",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-03",
+            "link": "https://careerkarma.com/blog/css-tabs/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/01/kobu-agency-ipARHaxETRk-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description":"Create tabs to help users navigate your page without having to use JavaScript! This tutorial shows you how. "
+        },
+        {
+            "id": 8,
+            "title": "HTML Superscript and Subscript Text and When To Use It",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/html-superscript-subscript/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/FBxthCpLbkNQGy77OvH9zK99uerD7Q3kAOzOf7ofzlcJkmEkFiIQ2t78nFvSz4WNPpuAWjLjWbk2prTVhs0fuf3kbiOE2MLmSsntY9U7jSv0CMhZbno0GKRP7Fn_wqXYdkeiRO-aoZ01lxvhCd-yhos8OyClOrK1IBytBkcGVCuNUGCAQ7gs2048.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "In this HTML tutorial, we'll take the time to learn why and how we would use superscript and subscript in our documents."
+        },
+        {
+            "id": 9,
+            "title": "When and How to Use the CSS Clearfix Hack",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-03",
+            "link": "https://careerkarma.com/blog/css-clearfix/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/photo-1557637675-2149a5295fb7.jpeg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "A tutorial on clearfix when you are looking at code that uses floats."
+        },
+        {
+            "id": 10,
+            "title": "CSS Important Rule: When to Use It",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-03",
+            "link": "https://careerkarma.com/blog/css-important/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "The !important keyword is used to override the styling of a webpage when the style inherits from some other CSS. Learn how to use it and when to use it here..."
+        },
+        {
+            "id": 11,
+            "title": "CSS Padding vs Margin: How to Tell the Difference",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/css-padding-vs-margin/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/pankaj-patel-626156-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "In this article, we'll take the time to learn the little differences between padding and margin in the Box Model"
+        },
+        {
+            "id": 12,
+            "title": "How to Create a Basic CSS Overlay",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/css-overlay/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/Screen-Shot-2020-06-22-at-4.42.32-PM.png?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "Learn how to create an overlay effect on your that will help increase the user experience of your website."
+        },
+        {
+            "id": 13,
+            "title": "Create Line Breaks Without Having to Use <br> in HTML",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/css-line-break/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/black-and-silver-laptop-computer-on-round-brown-wooden-table-1181243.jpg?lossy=1&strip=1&webp=1", 
+            "site":"Career Karma",
+            "description": "In this article, we'll use pseudo-elements to create line breaks on our website."
+        },
+        {
+            "id": 14,
+            "title": "How to Use Text Indent in CSS",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/css-text-indent/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/russ-ward-bqzLehtF8XE-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "Learn how to use the CSS text-indent property to indent the first line of every block of text."
+        },
+        {
+            "id": 15,
+            "title": "CSS Cropped Images",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/css-tutorial-css-crop-image/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/Screen-Shot-2020-07-02-at-3.58.37-AM.png?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "An overview on how to crop images using CSS."
+        },
+        {
+            "id": 16,
+            "title": "CSS Font-Kerning, Letter-Spacing and Word-Spacing Properties",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/css-spacing/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/da-nina-MBqwXZTfkdA-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "This tutorial concentrates on the spacing properties that can be used when it comes to fonts and words. Read more about how to use it here."
+        },
+        {
+            "id": 17,
+            "title": "How to Use CSS to Hide Scrollbars",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/hide-scrollbar/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/mimi-thian-zMcBf-n6qrs-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "Using scrollbars from a UX point-of-view. Learn how to make the scrollbar disappear if it's not needed."
+        },
+        {
+            "id": 18,
+            "title": "CSS: Object Fit",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/css-object-fit/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/Screen-Shot-2020-07-02-at-2.56.44-AM.png?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "Learn how to scale an element inside its container using the object-fit property."
+        },
+        {
+            "id": 19,
+            "title": "Centering Text in HTML",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/html-center-text/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2019/07/kelly-sikkema-YK0HPwWDJ1I-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "Learn how to align blocks of texts to the center using the text-align property in our inline styling in HTML."
+        },
+        {
+            "id": 20,
+            "title": "CSS Span",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/css-span/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/mathew-schwartz-b2_5y436Kfs-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "description": "Span elements are a generic HTML element similar to divs. This tutorial shows you how to handle them in CSS.",
+            "site":"Career Karma"
+        },
+        {
+            "id": 21,
+            "title": "CSS Sticky Footer",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/css-sticky-footer/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/person-writing-on-pink-sticky-notes-3854816.jpg?lossy=1&strip=1&webp=1",
+            "description": "Sticky Footers can be a confusing topic in CSS if they are confused with Fixed Footers. Here's how to tell the difference...",
+            "site":"Career Karma"
+        },
+        {
+            "id": 22,
+            "title": "CSS Border Image",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/border-image/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/steve-harvey-mu2xoJHgNYA-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "description": "In this article, we'll discuss what the border-image propert is in CSS and how to use it...",
+            "site": "Career Karma"
+        },
+        {
+            "id": 23,
+            "title": "How to Create HTML Image Links",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/html-image-links/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/pine-watt-3_Xwxya43hE-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "description": "You can use a combination of anchor tags and images to create links to external or internal pages. Here's how to do it...",
+            "site":"Career Karma"
+        },
+        {
+            "id": 24,
+            "title": "What are HTML divs and How are They Used?",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/html-div/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/markus-spiske-MI9-PY5cyNs-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "The div is a generic container in HTML to group elements together to easily style the contents using CSS."
+        },
+        {
+            "id": 25,
+            "title": "Center Elements With CSS Using Text-Align, Margins and More",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-07-01",
+            "link": "https://careerkarma.com/blog/css-center/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/black-board-bright-bullseye-226569.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "In this CSS tutorial, we will go over how to center text and block elements"
+        },
+        {
+            "id": 26,
+            "title": "CSS Flexbox",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-06-30",
+            "link": "https://careerkarma.com/blog/css-flexbox/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/06/pexels-photo-310435.jpeg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "The flexbox model was created to improve on the established CSS Box Model. In this article, we'll learn how to use it..."
+        },
+        {
+            "id": 27,
+            "title": "How to Link CSS to HTML to Make Markup More Readable",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-06-30",
+            "link": "https://careerkarma.com/blog/link-css-to-html/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/06/photo-of-an-abandoned-workspace-3359003.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description":"Learn the three different ways to incorporate CSS into your HTML"
+        },
+        {
+            "id": 28,
+            "title": "How to Insert Icons Using a CDN",
+            "language": "CSS",
+            "type": "tutorial",
+            "date": "2020-06-30",
+            "link": "https://careerkarma.com/blog/css-icons/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/06/harpal-singh-_zKxPsGOGKg-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "description": "An overview on how to use Font Awesome's CDN to insert icons into your project."
+        },
+        {
+            "id": 29,
+            "title": "HTML Background Color",
+            "language": "HTML",
+            "type": "tutorial",
+            "date": "2020-07-02",
+            "link": "https://careerkarma.com/blog/html-background-color/",
+            "picture": "https://744025.smushcdn.com/1245953/wp-content/uploads/2020/07/natalia-y-DIewyzpUbRc-unsplash.jpg?lossy=1&strip=1&webp=1",
+            "site":"Career Karma",
+            "description": "This will discuss how to change the background color to your HTML document without having to use a separate stylesheet."
+        }
+
+    ]
+}
