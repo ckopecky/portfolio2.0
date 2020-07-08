@@ -6,7 +6,7 @@ import { faSun, faMoon, faExternalLinkAlt } from '@fortawesome/free-solid-svg-ic
 //my context
 import { ThemeContext } from '../../context/ThemeContext';
 //my styled-component
-import { NavbarStyles, ButtonStyle, StyledDiv } from './NavbarStyles';
+import { TopNavBarStyle } from './NavbarStyles';
 //my assets
 import PDFDownload from '../../img/WebsiteAssets/Kopecky_Christina_Resume.pdf';
 
@@ -17,16 +17,12 @@ export const TopNavBar = ({sticky}) => {
     const { theme, toggle } = useContext(ThemeContext);
 
     return (
-      <>
-        <NavbarStyles  theme={theme}>
+      <TopNavBarStyle theme={theme}>
             <nav id="sticky-header" className={sticky ? "navbar navbar-sticky" : "navbar"}>
                 <div className="navbar">
-                {sticky ? 
                     <a className="navbar--logo" href="/">
                         Christina Kopecky
-                    </a> : <a className="navbar--logo" href="/">
-                        Christina Kopecky
-                    </a>}                   
+                    </a>                    
                     <div className="navbar--link">
                         <a className="navbar--link-item" href="#contact">Contact Me</a>
                         <a className="navbar--link-item" href="#portfolio">Portfolio</a>
@@ -38,14 +34,7 @@ export const TopNavBar = ({sticky}) => {
                     </div>                
                 </div>
             </nav>
-        </NavbarStyles>
-        <StyledDiv theme={theme}>
-          <ButtonStyle onClick={toggle} theme={theme}>
-            <FontAwesomeIcon icon={theme.oppositeTheme === "light" ? faSun : faMoon }/>
-          </ButtonStyle>
-        </StyledDiv>
-        
-      </>
+      </TopNavBarStyle>
     );
 };
 

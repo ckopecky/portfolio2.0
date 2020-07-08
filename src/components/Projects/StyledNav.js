@@ -11,8 +11,8 @@ export const StyledNav = styled.nav`
 		width: 100%;
         font-variant: small-caps;
         font-size: 3rem;
-        font-weight: bolder;
-        text-align: center;
+        font-weight: bold;
+        text-align: left;
 	}
 	div {
 		margin: 0px 10px;

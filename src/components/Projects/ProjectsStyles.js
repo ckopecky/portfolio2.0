@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const ProjectsStyles = styled.div`
 	width: 90%;
 	margin: 20px auto;
-	#portfolio {
-		padding: 50px;
+	h2 {
+		padding: 20px 0px 0px 50px;
 	}
 	.flex-container {
 		display: flex;

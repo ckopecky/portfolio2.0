@@ -2,7 +2,7 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faSun, faMoon, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 
 //my context
@@ -16,7 +16,7 @@ import PDFDownload from '../../img/WebsiteAssets/Kopecky_Christina_Resume.pdf';
 
 
 export const Hero = ({stickyRef}) => {
-	const { theme, toggle } = useContext(ThemeContext);
+	const { theme  } = useContext(ThemeContext);
 	return (
 		<HeroStyles ref={stickyRef} theme={theme}>
 			
@@ -25,10 +25,12 @@ export const Hero = ({stickyRef}) => {
 					Christina Kopecky
 				</h1>
 				<hr width="50%" />
-				<h4>Full-Stack Web Developer</h4>
+				<h4>Full-Stack Web Developer and Technical Writer</h4>
 				<div className="button-container">
 					<a href="#portfolio"><button>Portfolio</button></a>
-					<a href="#contact"><button>Contact Me</button></a>
+					<a href="#contact" className="hidden-mobile"><button>Contact Me</button></a>
+					<a href="#featured-blogs"><button>Featured Blogs</button></a>
+
 	<a href={PDFDownload} className="hidden-web"><button><span>{`Resume  `}   <FontAwesomeIcon icon={faExternalLinkAlt} /></span></button></a>
 
 				</div>

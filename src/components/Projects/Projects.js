@@ -9,7 +9,6 @@ import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { ThemeContext } from '../../context/ThemeContext';
 
 //my styled-components
-import { FilterNav } from './FilterNav';
 import { ProjectsStyles } from './ProjectsStyles';
 import { StyledDiv } from './StyledDiv';
 import { StyledNav } from './StyledNav';
@@ -23,7 +22,6 @@ import {
 	LambdaNotes,
 	SortingHat,
 } from '../../services/projectInfo';
-import Dropdown from './Dropdown';
 
 export const Projects = () => {
 	const { theme } = useContext(ThemeContext);
@@ -39,38 +37,14 @@ export const Projects = () => {
 		];
 		setProjects(projectInfo);
 	}, []);
-
-	const handleClick = (e) => {
-		console.log(e, 'event');
-		const copy = [
-			CineView,
-			GoogleClone,
-			LambdaNotes,
-			InstaClone,
-			Breakout,
-			SortingHat,
-		];
-		const filtered = copy.filter((item) => {
-			if (e.currentTarget.className === 'all') {
-				return item;
-			} else {
-				const regex = new RegExp(`${e.currentTarget.className}`, 'gim');
-				return regex.test(item.techStack);
-			}
-		});
-		setProjects(filtered);
-	};
+	
 	return (
 		<React.Fragment>
 			<ProjectsStyles theme={theme}>
 				<StyledNav id='portfolio' theme={theme}>
-					<span id="projects">
+					<h2 id="projects">
 							Projects
-					</span>
-					{/* <>
-						<span>Filter:</span>
-						<Dropdown handleClick={handleClick} />
-					</> */}
+					</h2>
 				</StyledNav>
 				<div className='flex-container'>
 					{projects.map((project, index) => {

@@ -4,11 +4,11 @@ export const ContactStyles = styled.div`
 	display: flex;
 	justify-content: center;
 	padding-top: 50px;
+	width: 100%;
 	.contact-form {
-		width: 80%;
+		width: 90%;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		flex-direction: column;
 		padding: 20px;
 		margin: 0 auto;
@@ -19,14 +19,15 @@ export const ContactStyles = styled.div`
 		.contact-header {
 			font-size: 2rem;
 			font-weight: bold;
-			text-align: center;
+			text-align: left;
+			font-variant: small-caps;
 		}
 		label {
 			font-size: 1.5rem;
 		}
 		input {
 			font-size: 1.4rem;
-			width: 91%;
+			width: 100%;
 			height: 50px;
 			padding-left: 10px;
 			margin: 20px;

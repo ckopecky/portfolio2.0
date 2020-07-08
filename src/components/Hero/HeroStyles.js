@@ -7,7 +7,8 @@ export const HeroStyles = styled.div`
 	display: flex;
 
 	.hero-caption-box {
-		width: 50%;
+		max-width: 900px;
+		width: 100%;
 		height: 500px;
 		background: ${(props) => {
 			return props.theme.surface;
@@ -33,29 +34,26 @@ export const HeroStyles = styled.div`
 		}
 		.button-container {
 			display: flex;
-			width: 50%;
-			justify-content: center;
-			padding: 20px;
-			a {
+			width: 100%;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			@media screen and (max-width: 900px) {
+				margin: 20px;
+				width: 100%;
+			}
+			a {	
+				width: 25%;
 				margin: 10px;
 				@media screen and (max-width: 900px) {
-					margin: 0px;
+					width: 30%;
 				}
 			}
 			a button {
 				width: 100%;
 				text-align: center;
-				margin: 20px;
 				@media screen and (max-width: 900px) {
-					width: 90%;
-					margin: 10px;
-					
+					min-width: 150px;
 				}
-			}
-			@media screen and (max-width: 900px) {
-				flex-direction: column;
-				align-items: center;
-				justify-content: space-between;
 			}
 		}
 
