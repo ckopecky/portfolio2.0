@@ -1,4 +1,13 @@
 # Portfolio Site
+Portolio Landing Page
+<img src="./src/assets/Screen Shot 2020-08-03 at 9.52.36 AM.png" align="right">
+
+
+Portfolio Project Cards
+<img src="./src/assets/Screen Shot 2020-08-03 at 9.57.13 AM.png" />
+
+Portfolio Theme Change
+<img src="./src/assets/Screen Shot 2020-08-03 at 9.53.48 AM.png" />
 
 ### Deployment
 
@@ -9,12 +18,9 @@ Client: [Christina Kopecky Portfolio](http://christinakopecky.com/)
 - React.js
 - Dependencies:
 
- 
-    - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
     - [dotenv](https://www.npmjs.com/package/dotenv)
     - [react](https://reactjs.org/docs/getting-started.html)
     - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
-    - [reactstrap](https://reactstrap.github.io/)
 
 - Heroku
     - [https://www.heroku.com/](https://www.heroku.com/)

@@ -8,8 +8,9 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 const Blogs = ({ stickyRef }) => {
     const { theme } = useContext(ThemeContext);
-    const [ loading, setLoading ] = useState(true);
     const [ articles, setArticles ] = useState([])
+    const [ loading, setLoading] = useState(true);
+
     useEffect(() => {
         const getRandomArticles = (blogs) => {
             let indexArr = [];
@@ -20,19 +21,18 @@ const Blogs = ({ stickyRef }) => {
                 if(indexArr.indexOf(random) < 0) {
                     indexArr = [...indexArr, random];
                     randomArticles = [...randomArticles, blogs[random]];
-                    setLoading(false);
                 }
             }
             setArticles(randomArticles);
-            console.log(indexArr);
-            console.log(randomArticles)
         };
         getRandomArticles(data.blogs)
+        setLoading(false);
     }, []);
     
 
 
     if(!loading) {
+        console.log(articles, "articles")
         return (
             <H2BlogContainerStyle theme={theme}>
                <h2 id="featured-blogs">Featured Blogs</h2>

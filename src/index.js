@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 //my contexts
 import { ThemeContextProvider } from './context/ThemeContext';
 import { AppContextProvider } from './context/AppContext';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BlogContextProvider } from './context/BlogContext';
 
 //my components
 import App from './App';
@@ -19,9 +19,11 @@ ReactDOM.render(
     <ScrollToTop>
       <ThemeContextProvider>
         <AppContextProvider>
+          <BlogContextProvider>
           <React.StrictMode>
               <App />
           </React.StrictMode>
+          </BlogContextProvider>
         </AppContextProvider>
       </ThemeContextProvider>
       </ScrollToTop>
