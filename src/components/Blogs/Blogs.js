@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useAxios } from '../../hooks/useAxios';
-import {BlogContainerStyle, BlogStyle, BlogImg, BlogTitle, BlogBody, BlogDescription, BlogLink, H2BlogContainerStyle } from './BlogStyles';
+import {BlogContainerStyle, BlogStyle, BlogImg, BlogTitle, BlogBody, BlogDescription, BlogLink, H2BlogContainerStyle, BlogContainer } from './BlogStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,8 +23,9 @@ const Blogs = ({ stickyRef }) => {
             <H2BlogContainerStyle theme={theme}>
                <h2 id="featured-blogs">Featured Blogs</h2>
                 <BlogContainerStyle ref={stickyRef} theme={theme}>
-                    {data.map(blog => {
+                    {data.slice(-9).map(blog => {
                         return (
+                            <BlogContainer href={blog.link} target="_blank" rel="noopenner noreferrer">
                             <BlogStyle key={blog.id} theme={theme}>
                                 <BlogImg theme={theme} src={blog.picture} />
                                 <BlogBody theme={theme}>
@@ -39,6 +40,7 @@ const Blogs = ({ stickyRef }) => {
                                     </BlogLink>
                                 </BlogBody>
                             </BlogStyle>
+                            </BlogContainer>
                         )
                     })}
                 </BlogContainerStyle>

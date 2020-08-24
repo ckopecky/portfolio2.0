@@ -37,12 +37,16 @@ export const BlogContainerStyle = styled.div`
 
 
 `
+
+export const BlogContainer = styled.a`
+    width: 30%;
+    margin: 20px auto;
+
+`
 export const BlogStyle = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30%;
     border-radius: 20px;
-    margin: 20px auto;
     border: ${(props) => {
 			return props.theme.oppositeTheme === 'dark'
 				? '1px solid black'
