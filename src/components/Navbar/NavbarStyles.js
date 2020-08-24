@@ -41,7 +41,7 @@ export const TopNavBarStyle = styled.div`
 			padding: 20px;
 			@media screen and (max-width: 900px) {
 				width: 50%;
-				padding: 0;
+				padding: 20px;
 				margin: 0;
 			}
 		}

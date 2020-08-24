@@ -25,6 +25,10 @@ export const HeroStyles = styled.div`
 		@media screen and (max-width: 900px) {
 			width: 90%;
 			height: 500px;
+			h4 {
+				width: 75%;
+				text-align: center;
+			}
 		}
 		h1,
 		h2,
@@ -38,15 +42,13 @@ export const HeroStyles = styled.div`
 			flex-flow: row wrap;
 			justify-content: space-around;
 			@media screen and (max-width: 900px) {
-				margin: 20px;
-				width: 100%;
+				margin: 20px auto;
+				width: 80%;
 			}
 			a {	
 				width: 25%;
 				margin: 10px;
-				@media screen and (max-width: 900px) {
-					width: 30%;
-				}
+				min-width: 150px;
 			}
 			a button {
 				width: 100%;
