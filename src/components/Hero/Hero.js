@@ -29,7 +29,7 @@ export const Hero = ({stickyRef}) => {
 				<div className="button-container">
 					<a href="#portfolio"><button>Portfolio</button></a>
 					<a href="#contact" className="hidden-mobile"><button>Contact Me</button></a>
-					<a href="#featured-blogs"><button>Featured Blogs</button></a>
+					<a href="#blogs"><button>Featured Blogs</button></a>
 
 	<a href={PDFDownload} className="hidden-web"><button><span>{`Resume  `}   <FontAwesomeIcon icon={faExternalLinkAlt} /></span></button></a>
 
