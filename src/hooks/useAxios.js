@@ -4,13 +4,12 @@ import axios from 'axios';
 export const useAxios = (url) => {
 
     const [ data, setData ] = useState([]);
-    const [ loading, setLoading ] = useState(false);
+    const [ loading, setLoading ] = useState(true);
     const [ err, setErr ] = useState(false);
     const [ errMsg, setErrMsg ] = useState('');
 
     useEffect(() => {
         let isSubscribed = true;
-        setLoading(true);
 
         const getArticles = (link) => {
             const promise = axios.get(link);
@@ -19,10 +18,8 @@ export const useAxios = (url) => {
                 const filtered = response.data.filter((item => {
                     return item.priority === true;
                 }));
-                console.log(filtered);
                 if(isSubscribed) {
                     setData(filtered);
-                    setLoading(false);
                 }
             })
             .catch(err => {
@@ -32,9 +29,10 @@ export const useAxios = (url) => {
             });
         };
         getArticles(url);
-        return () => isSubscribed = false;
-        
-    }, []);
+        return () => {
+            isSubscribed = false;
+        }
+    }, [url]);
 
     return [ data, err, errMsg, loading ];
 
