@@ -21,7 +21,7 @@ const Blogs = ({ stickyRef }) => {
     if(!loading) {
         return (
             <H2BlogContainerStyle theme={theme}>
-               <h2 id="featured-blogs">Featured Blogs</h2>
+               <h2 id="blogs">Featured Blogs</h2>
                 <BlogContainerStyle ref={stickyRef} theme={theme}>
                     {data.slice(-9).map(blog => {
                         return (
