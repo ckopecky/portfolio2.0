@@ -41,6 +41,9 @@ export const BlogContainerStyle = styled.div`
 export const BlogContainer = styled.a`
     width: 30%;
     margin: 20px auto;
+    @media screen and (max-width: 900px){
+        width: 80%;
+    }
 
 `
 export const BlogStyle = styled.div`
